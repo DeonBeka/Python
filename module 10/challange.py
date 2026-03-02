@@ -46,9 +46,6 @@ class DigitalSchool:
             "courses": self.__courses
         }
 
-    def organize_hackathon(self):
-        raise NotImplementedError("This method should be overridden by subclasses")
-
 class DS_Prishtina(DigitalSchool):
     def __init__(self, name, city, state, courses, student_number):
         super().__init__(name, city, state, courses)
