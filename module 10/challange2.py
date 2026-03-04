@@ -1,4 +1,3 @@
-
 class DigitalSchool:
     def __init__(self, name, city, state, courses):
         self.__name = name
@@ -9,42 +8,43 @@ class DigitalSchool:
     @property
     def name(self):
         return self.__name
-
     @name.setter
-    def name(self, value):
-        self.__name = value
+    def name(self, name):
+        self.__name = name
 
     @property
     def city(self):
         return self.__city
 
     @city.setter
-    def city(self, value):
-        self.__city = value
+    def city(self, city):
+        self.__city = city
 
     @property
     def state(self):
         return self.__state
 
     @state.setter
-    def state(self, value):
-        self.__state = value
+    def state(self, state):
+        self.__state = state
 
     @property
     def courses(self):
         return self.__courses
 
     @courses.setter
-    def courses(self, value):
-        self.__courses = value
+    def courses(self, courses):
+        self.__courses = courses
 
     def show_school_info(self):
         return {
-            "name": self.__name,
-            "city": self.__city,
-            "state": self.__state,
-            "courses": self.__courses
+            "Name:": self.__name,
+            "City:": self.__city,
+            "State:": self.__state,
+            "Courses:": self.__courses,
         }
+    def organize_hackathon(self):
+        print(f"Organize hackathon event")
 
 class DS_Prishtina(DigitalSchool):
     def __init__(self, name, city, state, courses, student_number):
@@ -56,19 +56,23 @@ class DS_Prishtina(DigitalSchool):
         return self.__student_number
 
     def SCF(self):
-        print("DS Prishtina is organizing the Spring Code Fest (SCF)!")
+        print("Digital School Prishtina is organizing a Spring Code Fest(SCF)")
 
     def organize_hackathon(self):
-        print("DS Prishtina is organizing a city-wide hackathon for students!")
+        print("DS Prishtina is organizing a hackathon")
 
 ds_prishtina = DS_Prishtina(
-    name="Digital School Prishtina",
-    city="Prishtina",
-    state="Kosovo",
-    courses=["Python", "Web Development", "AI"],
-    student_number=450
+    name = "Digital School Prishtina",
+    city = "Prishtina",
+    state =  "Kosovo",
+    courses= ["Python", "Js,HTML,CSS", "Wordpress"],
+    student_number= 27
 )
 ds_prishtina.SCF()
 ds_prishtina.organize_hackathon()
 
-print(f"The number of students in DS_Prishtina is {ds_prishtina.student_number}")
+print(f"The number of student in DS prishtina is {ds_prishtina.student_number}")
+
+
+
+
