@@ -26,5 +26,18 @@ plt.ylabel("Temperature")
 
 plt.show()
 
+plt.figure(figsize=(10, 6))
+month_avg.plot(kind="line", marker="o", color="skyblue")
+
+plt.title("Avg temperature ")
+plt.xlabel("Month")
+plt.ylabel("Temperature")
+
+plt.grid(axis="both", linestyle="--", alpha =0.7)
+plt.show()
+
+
+
+
 
 
