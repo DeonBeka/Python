@@ -1,0 +1,51 @@
+id,name,age,department,position,salary,hire_date
+1,John Smith,24,IT,Junior Developer,38000,2023-03-15
+2,Emma Johnson,29,HR,HR Specialist,45000,2021-06-10
+3,Michael Brown,35,Finance,Accountant,52000,2019-09-01
+4,Sophia Davis,27,Marketing,Marketing Coordinator,43000,2022-01-20
+5,William Wilson,31,IT,Developer,58000,2020-11-05
+6,Olivia Martinez,26,Sales,Sales Associate,40000,2022-08-12
+7,James Anderson,38,IT,Senior Developer,75000,2018-04-17
+8,Ava Taylor,30,HR,HR Manager,68000,2019-02-01
+9,Benjamin Thomas,28,Finance,Financial Analyst,55000,2021-10-10
+10,Isabella Moore,25,Marketing,Content Specialist,42000,2023-01-08
+11,Lucas Jackson,33,Sales,Sales Manager,70000,2018-12-15
+12,Mia Martin,29,IT,Developer,60000,2020-07-22
+13,Ethan Lee,41,Finance,Senior Accountant,78000,2016-03-11
+14,Charlotte Perez,26,Marketing,SEO Specialist,44000,2022-05-30
+15,Mason White,24,Sales,Sales Associate,39000,2023-02-14
+16,Amelia Harris,32,HR,Recruiter,50000,2020-04-05
+17,Logan Clark,36,IT,Team Lead,85000,2017-09-19
+18,Harper Lewis,27,Finance,Accountant,51000,2021-03-28
+19,Elijah Robinson,30,Marketing,Marketing Manager,69000,2019-11-09
+20,Evelyn Walker,34,Sales,Sales Manager,72000,2018-06-13
+21,Alexander Hall,25,IT,Junior Developer,40000,2023-04-01
+22,Abigail Allen,28,HR,HR Specialist,46000,2021-08-18
+23,Daniel Young,39,Finance,Finance Manager,90000,2015-10-22
+24,Emily Hernandez,27,Marketing,Content Specialist,43000,2022-02-17
+25,Matthew King,31,IT,Developer,61000,2020-05-14
+26,Elizabeth Wright,29,Sales,Sales Associate,41000,2021-12-01
+27,Joseph Lopez,37,IT,Senior Developer,78000,2017-07-07
+28,Sofia Hill,33,HR,HR Manager,70000,2018-09-03
+29,David Scott,26,Finance,Financial Analyst,54000,2022-04-21
+30,Avery Green,24,Marketing,Marketing Coordinator,41000,2023-05-11
+31,Samuel Adams,35,Sales,Sales Manager,73000,2018-01-30
+32,Ella Baker,30,IT,Developer,62000,2020-03-27
+33,Jackson Gonzalez,42,Finance,Senior Accountant,82000,2014-08-16
+34,Scarlett Nelson,28,Marketing,SEO Specialist,45000,2021-07-04
+35,Sebastian Carter,25,Sales,Sales Associate,39500,2023-06-19
+36,Grace Mitchell,31,HR,Recruiter,52000,2019-10-26
+37,Aiden Perez,38,IT,Team Lead,88000,2016-12-08
+38,Chloe Roberts,29,Finance,Accountant,53000,2020-09-13
+39,Henry Turner,34,Marketing,Marketing Manager,71000,2018-05-20
+40,Lily Phillips,32,Sales,Sales Manager,74000,2017-11-29
+41,Owen Campbell,23,IT,Junior Developer,37000,2024-01-15
+42,Zoey Parker,27,HR,HR Specialist,47000,2021-11-07
+43,Gabriel Evans,36,Finance,Finance Manager,92000,2015-06-24
+44,Hannah Edwards,26,Marketing,Content Specialist,42500,2022-10-18
+45,Julian Collins,30,IT,Developer,63000,2019-04-12
+46,Nora Stewart,28,Sales,Sales Associate,40500,2022-07-09
+47,Levi Sanchez,39,IT,Senior Developer,80000,2016-02-28
+48,Aria Morris,34,HR,HR Manager,72000,2017-03-21
+49,Isaac Rogers,27,Finance,Financial Analyst,56000,2021-01-14
+50,Penelope Reed,25,Marketing,Marketing Coordinator,42000,2023-09-05

@@ -1,0 +1,15 @@
+Employee Performance Management Platform
+
+HR-focused data management.
+
+Features:
+
+Employee profiles
+KPI tracking
+Performance reviews
+Promotion analytics
+
+Libraries:
+
+FastAPI
+Pandas
