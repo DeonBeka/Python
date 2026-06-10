@@ -12,7 +12,7 @@ def create_connection():
 
 def create_database():
     # Set up the SQLite database
-    conn = sqlite3.connect('Employees.db')
+    conn = sqlite3.connect('employees.db')
     cursor = conn.cursor()
 
     # Create a table to store book information
@@ -32,7 +32,7 @@ def create_database():
     return conn, cursor
 
 
-def create_employee(employee: EmployeeCreate) -> int:
+def create_employee(employees: EmployeeCreate) -> int:
     """
     Adds a new movie to the database.
 
@@ -44,7 +44,7 @@ def create_employee(employee: EmployeeCreate) -> int:
     """
     connection = create_database()
     cursor = connection.cursor()
-    cursor.execute("INSERT INTO Employees (name, age, department, position, salary, hire_date) VALUES (?, ?, ?, ?, ?, ?)", (employee.name, employee.age, employee.department, employee.position, employee.salary, employee.hire_date))
+    cursor.execute("INSERT INTO employees (name, age, department, position, salary, hire_date) VALUES (?, ?, ?, ?, ?, ?)", (employees.name, employees.age, employees.department, employees.position, employees.salary, employees.hire_date))
     connection.commit()
     employee_id = cursor.lastrowid
     connection.close()
@@ -52,15 +52,10 @@ def create_employee(employee: EmployeeCreate) -> int:
 
 
 def read_employees():
-    """s
 
-
-    Returns:
-        list: A list of recipe models representing all movies in the database.
-    """
     connection = create_connection()
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM Employees")
+    cursor.execute("SELECT * FROM employees")
     rows = cursor.fetchall()
     connection.close()
     employees = [
@@ -82,7 +77,7 @@ def read_employee(employee_id: int):
 
     connection = create_connection()
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM Employees WHERE id = ?", (employee_id,))
+    cursor.execute("SELECT * FROM employees WHERE id = ?", (employee_id,))
     row = cursor.fetchone()
     connection.close()
     if row is None:
@@ -90,13 +85,13 @@ def read_employee(employee_id: int):
     return employee(id=row["id"], name=row["name"], age=row["age"],department=row["department"], position=row["position"], salary=row["salary"], hire_date=row["hire_date"])
 
 
-def update_employee(employee_id: int, employee: EmployeeCreate) -> bool:
+def update_employee(employee_id: int, employees: EmployeeCreate) -> bool:
 
     connection = create_connection()
     cursor = connection.cursor()
     cursor.execute(
-        "UPDATE Employees SET name = ?, age = ?, department = ?, position=?, salary=?, hire_date=?  WHERE id = ?",
-        (employee.name, employee.age, employee.departament, employee.position, employee.salary, employee.hire_date, employee_id)
+        "UPDATE employees SET name = ?, age = ?, department = ?, position=?, salary=?, hire_date=?  WHERE id = ?",
+        (employees.name, employees.age, employees.departament, employees.position, employees.salary, employees.hire_date, employee_id)
     )
     connection.commit()
     updated = cursor.rowcount
@@ -108,7 +103,7 @@ def delete_employee(employee_id: int) -> bool:
 
     connection = create_connection()
     cursor = connection.cursor()
-    cursor.execute("DELETE FROM Employees WHERE id = ?", (employee_id,))
+    cursor.execute("DELETE FROM employees WHERE id = ?", (employee_id,))
     connection.commit()
     deleted = cursor.rowcount
     connection.close()
